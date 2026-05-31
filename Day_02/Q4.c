@@ -2,7 +2,7 @@
 //Write a program to check whether a number is palindrome .
 int main (){
   int num;
-  int isnegative =0;
+  int isnegative =0;// Behaves as a switch.
   int d ;
   int result =0;
   int original;//Stores a backup of the input number .
