@@ -1,0 +1,33 @@
+// Question: Write a program to Create employee management system.
+
+#include <stdio.h>
+
+struct Employee
+{
+    int id;
+    char name[50];
+    float salary;
+};
+
+int main()
+{
+    struct Employee e;
+
+    // Step 1: Read employee details
+    printf("Enter Employee ID: ");
+    scanf("%d", &e.id);
+
+    printf("Enter Employee Name: ");
+    scanf("%s", e.name);
+
+    printf("Enter Salary: ");
+    scanf("%f", &e.salary);
+
+    // Step 2: Display employee details
+    printf("\n----- Employee Record -----\n");
+    printf("Employee ID : %d\n", e.id);
+    printf("Name        : %s\n", e.name);
+    printf("Salary      : %.2f\n", e.salary);
+
+    return 0;
+}
